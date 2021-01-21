@@ -82,14 +82,12 @@ function updateScore(){
 function refreshBorders(){
     document.querySelectorAll('.comp-img').forEach(x => x.style.borderColor = 'black')
 }
-
 function endGame(){
     const btn = document.createElement('button')
     btn.innerHTML = 'Play Again?'
     document.body.appendChild(btn) 
     btn.addEventListener('click', clearScore)
 }
-
 function clearScore(){
     endFlag = false
     roundOutcome.textContent = ''
