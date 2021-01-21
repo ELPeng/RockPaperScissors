@@ -1,0 +1,114 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+body{
+  color: orange;
+  background-color: rgb(37, 37, 37);
+  font-family: 'Roboto', sans-serif;
+  width: 70%;
+  margin: 0 auto !important;
+}
+
+ul{
+  list-style-type: circle;
+  list-style: inside;
+  text-align:justify;
+  margin-top: 0;
+  align-self: center;
+}
+
+.parent-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.top-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.top-container>h1{
+  margin-bottom: 5px;
+}
+
+.top-container>p{
+  margin-bottom: 30px;
+}
+
+.bottom-container{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  border: solid white 2px;
+  border-radius: 4%;
+  background:linear-gradient(rgb(32, 36, 78), rgb(75, 89, 248));
+  text-align: center;
+
+}
+.wrapper>h2, .wrapper .score {
+  font-size: 2rem;
+  margin: 5px;
+}
+
+.player-wrapper img:hover{
+  border-color: orange;
+}
+.player-wrapper img:active{
+  transform: scale(1.15)
+}
+
+.RPS-selector{
+  display: flex;
+  padding: 5px;
+}
+
+.img-container{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+
+.img-container span{
+  font-size: 1.2rem;
+  padding: 10px 0;
+}
+
+img{
+  border: solid black 5px;
+}
+
+h3{
+  font-size: 1.5rem;
+  margin: 3rem 0 1rem 0;
+}
+#round-outcome{
+  font-size: 1.2rem;
+  margin: 0.2rem 0
+}
+
+#match-outcome{
+  font-size: 2rem;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
