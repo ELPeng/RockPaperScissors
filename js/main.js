@@ -91,6 +91,8 @@ function endGame(){
     document.body.appendChild(btn) 
     btn.addEventListener('click', clearScore)
 }
+
+//when the 'Play Again' button is pressed, scores are cleared and game is reset
 function clearScore(){
     userRock.classList.add('player-img-active')
     userPaper.classList.add('player-img-active')
