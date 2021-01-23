@@ -5,7 +5,7 @@ const userPaper = document.querySelector('#user-paper')
 const userScissors = document.querySelector('#user-scissors')
 let playerScore = document.querySelector('#player-score')
 let compScore = document.querySelector('#comp-score')
-let roundOutcome = document.querySelector('#round-outcome')
+let roundOutcome = document.querySelector('#round-outcome')  
 let userSelect = ''
 let endFlag = false
 
@@ -70,6 +70,9 @@ function updateScore(){
     playerScore.textContent = playerWins
     compScore.textContent = compWins
     if(playerWins == 5 || compWins == 5){
+        userRock.classList.remove('player-img-active')
+        userPaper.classList.remove('player-img-active')
+        userScissors.classList.remove('player-img-active')
         endFlag = true
         if (playerWins > compWins)
             document.querySelector('#match-outcome').textContent =`The Final Score is ${playerWins} : ${compWins} Player Wins!`      
@@ -89,6 +92,9 @@ function endGame(){
     btn.addEventListener('click', clearScore)
 }
 function clearScore(){
+    userRock.classList.add('player-img-active')
+    userPaper.classList.add('player-img-active')
+    userScissors.classList.add('player-img-active')
     endFlag = false
     roundOutcome.textContent = ''
     document.getElementById('match-outcome').textContent = ''

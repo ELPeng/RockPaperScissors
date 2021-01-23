@@ -45,7 +45,6 @@ ul{
   color: white;
   display: flex;
   justify-content: space-between;
-
 }
 
 .wrapper{
@@ -55,17 +54,16 @@ ul{
   border-radius: 4%;
   background:linear-gradient(rgb(32, 36, 78), rgb(75, 89, 248));
   text-align: center;
-
 }
 .wrapper>h2, .wrapper .score {
   font-size: 2rem;
   margin: 5px;
 }
 
-.player-wrapper img:hover{
+.player-img-active:hover{
   border-color: orange;
 }
-.player-wrapper img:active{
+.player-img-active:active{
   transform: scale(1.15)
 }
 
